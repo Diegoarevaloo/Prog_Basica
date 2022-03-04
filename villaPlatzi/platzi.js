@@ -20,6 +20,14 @@ vaca.imagen = new Image();
 vaca.imagen.src = vaca.url;
 vaca.imagen.addEventListener("load", cargarVacas);
 
+cerdo.imagen = new Image();
+cerdo.imagen.src = vaca.url;
+cerdo.imagen.addEventListener("load", cargarCerdos);
+
+pollo.imagen = new Image();
+pollo.imagen.src = vaca.url;
+pollo.imagen.addEventListener("load", cargarPollos);
+
 function cargarFondo()
 {
   fondo.cargaOK = true;
