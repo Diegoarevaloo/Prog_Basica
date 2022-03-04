@@ -38,6 +38,18 @@ function cargarVacas()
   vaca.cargaOK = true;
   dibujar();
 }
+function cargarCerdos()
+{
+  cerdo.cargaOK = true;
+  dibujar();
+}
+function cargarPollos()
+{
+  pollo.cargaOK = true;
+  dibujar();
+}
+
+
 
 function dibujar()
 {
@@ -56,6 +68,17 @@ function dibujar()
       var y = y * 40;
       papel.drawImage(vaca.imagen, x, y);
     }
+    if(vaca.cargaOK)
+    {
+      console.log(cantidad);
+      for(var v=0; v < cantidad; v++)
+      {
+        var x = aleatorio(0, 7);
+        var y = aleatorio(0, 10);
+        var x = x * 60;
+        var y = y * 40;
+        papel.drawImage(vaca.imagen, x, y);
+      }  
   }
 }
 function aleatorio(min, maxi)
@@ -65,6 +88,5 @@ function aleatorio(min, maxi)
   return resultado;
 }
 
-Prueba platzi
-Es la prueba BeforeUnloadEvent 
+
 
