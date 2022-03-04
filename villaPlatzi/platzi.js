@@ -59,8 +59,6 @@ function cargarPollos()
   dibujar();
 }
 
-
-
 function dibujar()
 {
   if(fondo.cargaOK)
