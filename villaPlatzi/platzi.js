@@ -38,6 +38,18 @@ function cargarVacas()
   vaca.cargaOK = true;
   dibujar();
 }
+function cargarCerdos()
+{
+  vaca.cargaOK = true;
+  dibujar();
+}
+function cargarPollos()
+{
+  vaca.cargaOK = true;
+  dibujar();
+}
+
+
 
 function dibujar()
 {
