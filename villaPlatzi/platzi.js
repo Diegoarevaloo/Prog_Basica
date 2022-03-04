@@ -20,13 +20,13 @@ vaca.imagen = new Image();
 vaca.imagen.src = vaca.url;
 vaca.imagen.addEventListener("load", cargarVacas);
 
-cerdo.imagen = new Image();
+/*cerdo.imagen = new Image();
 cerdo.imagen.src = vaca.url;
 cerdo.imagen.addEventListener("load", cargarCerdos);
 
 pollo.imagen = new Image();
 pollo.imagen.src = vaca.url;
-pollo.imagen.addEventListener("load", cargarPollos);
+pollo.imagen.addEventListener("load", cargarPollos);*/
 
 function cargarFondo()
 {
@@ -38,7 +38,7 @@ function cargarVacas()
   vaca.cargaOK = true;
   dibujar();
 }
-function cargarCerdos()
+/*function cargarCerdos()
 {
   cerdo.cargaOK = true;
   dibujar();
@@ -47,7 +47,7 @@ function cargarPollos()
 {
   pollo.cargaOK = true;
   dibujar();
-}
+}*/
 
 
 
@@ -87,6 +87,3 @@ function aleatorio(min, maxi)
   resultado = Math.floor(Math.random() * (maxi - min + 1)) + min;
   return resultado;
 }
-
-
-
