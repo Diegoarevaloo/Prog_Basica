@@ -69,17 +69,6 @@ function dibujar()
   {
     console.log(cantidad);
     for(var v=0; v < cantidad; v++)
-    {
-      var x = aleatorio(0, 7);
-      var y = aleatorio(0, 10);
-      var x = x * 60;
-      var y = y * 40;
-      papel.drawImage(vaca.imagen, x, y);
-    }
-    if(vaca.cargaOK)
-    {
-      console.log(cantidad);
-      for(var v=0; v < cantidad; v++)
       {
         var x = aleatorio(0, 7);
         var y = aleatorio(0, 10);
@@ -87,8 +76,7 @@ function dibujar()
         var y = y * 40;
         papel.drawImage(vaca.imagen, x, y);
       }
-    }    
-  }
+  }    
   if(cerdo.cargaOK)
   {
     console.log(cantidad);
@@ -99,18 +87,6 @@ function dibujar()
       var x = x * 60;
       var y = y * 40;
       papel.drawImage(cerdo.imagen, x, y);
-    }
-    if(cerdo.cargaOK)
-    {
-      console.log(cantidad);
-      for(var v=0; v < cantidad; v++)
-      {
-        var x = aleatorio(0, 7);
-        var y = aleatorio(0, 10);
-        var x = x * 60;
-        var y = y * 40;
-        papel.drawImage(cerdo.imagen, x, y);
-      }
     }
   }
   if(pollo.cargaOK)
@@ -124,18 +100,6 @@ function dibujar()
       var y = y * 40;
       papel.drawImage(pollo.imagen, x, y);
     }
-    if(cerdo.cargaOK)
-    {
-      console.log(cantidad);
-      for(var v=0; v < cantidad; v++)
-      {
-        var x = aleatorio(0, 7);
-        var y = aleatorio(0, 10);
-        var x = x * 60;
-        var y = y * 40;
-        papel.drawImage(pollo.imagen, x, y);
-      }
-    }        
   }
 }
 
