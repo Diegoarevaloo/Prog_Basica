@@ -38,28 +38,17 @@ function cargarVacas()
   vaca.cargaOK = true;
   dibujar();
 }
-<<<<<<< HEAD
+
 /*function cargarCerdos()
 {
   cerdo.cargaOK = true;
-=======
-function cargarCerdos()
-{
-  vaca.cargaOK = true;
->>>>>>> 232f57bfc87b2a10879f0f5ab0a96a28186b70fd
   dibujar();
 }
 function cargarPollos()
 {
-<<<<<<< HEAD
   pollo.cargaOK = true;
   dibujar();
 }*/
-=======
-  vaca.cargaOK = true;
-  dibujar();
-}
->>>>>>> 232f57bfc87b2a10879f0f5ab0a96a28186b70fd
 
 
 
