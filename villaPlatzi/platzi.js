@@ -57,3 +57,6 @@ function aleatorio(min, maxi)
   return resultado;
 }
 
+Prueba platzi
+Es la prueba BeforeUnloadEvent 
+
