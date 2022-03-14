@@ -65,80 +65,28 @@ function dibujar()
   {
     papel.drawImage(fondo.imagen, 0, 0);
   }
-  if(vaca.cargaOK)
+  if(vaca.cargaOK && cerdo.cargaOK && pollo.cargaOK )
   {
     console.log(cantidad);
     for(var v=0; v < cantidad; v++)
-    {
-      var x = aleatorio(0, 7);
-      var y = aleatorio(0, 10);
-      var x = x * 60;
-      var y = y * 40;
-      papel.drawImage(vaca.imagen, x, y);
-    }
-    if(vaca.cargaOK)
-    {
-      console.log(cantidad);
-      for(var v=0; v < cantidad; v++)
       {
         var x = aleatorio(0, 7);
         var y = aleatorio(0, 10);
-        var x = x * 60;
-        var y = y * 40;
-        papel.drawImage(vaca.imagen, x, y);
-      }
-    }    
-  }
-  if(cerdo.cargaOK)
-  {
-    console.log(cantidad);
-    for(var v=0; v < cantidad; v++)
-    {
-      var x = aleatorio(0, 7);
-      var y = aleatorio(0, 10);
-      var x = x * 60;
-      var y = y * 40;
-      papel.drawImage(cerdo.imagen, x, y);
-    }
-    if(cerdo.cargaOK)
-    {
-      console.log(cantidad);
-      for(var v=0; v < cantidad; v++)
-      {
-        var x = aleatorio(0, 7);
-        var y = aleatorio(0, 10);
-        var x = x * 60;
-        var y = y * 40;
-        papel.drawImage(cerdo.imagen, x, y);
-      }
-    }
-  }
-  if(pollo.cargaOK)
-  {
-    console.log(cantidad);
-    for(var v=0; v < cantidad; v++)
-    {
-      var x = aleatorio(0, 7);
-      var y = aleatorio(0, 10);
-      var x = x * 60;
-      var y = y * 40;
-      papel.drawImage(pollo.imagen, x, y);
-    }
-    if(cerdo.cargaOK)
-    {
-      console.log(cantidad);
-      for(var v=0; v < cantidad; v++)
-      {
-        var x = aleatorio(0, 7);
-        var y = aleatorio(0, 10);
-        var x = x * 60;
-        var y = y * 40;
-        papel.drawImage(pollo.imagen, x, y);
-      }
-    }        
-  }
-}
+        var xv = x * aleatorio(0,60);
+        var yv = y * aleatorio(0,60);
+        var xc = x * 35;
+        var yc = y  * 35;
+        var xp = x * 67;
+        var yp = y * 45;
+        console.log(xv,yv,xc,yc,xp,yp)
 
+        papel.drawImage(vaca.imagen, xv, yv);
+        papel.drawImage(cerdo.imagen, xc, yc);
+        papel.drawImage(pollo.imagen, xp, yp);
+      }
+  }    
+  
+}
 function aleatorio(min, maxi)
 {
   var resultado;
